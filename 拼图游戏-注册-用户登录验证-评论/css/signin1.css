@@ -1,0 +1,140 @@
+@charset "utf-8";
+	/* 
+	 *CSS Document  
+	 *Author: song
+	 *Date:	2017-8-27
+	 *功能：	登陆界面样式表
+	 *
+	 */
+        
+		/*重设默认样式,清除内外边距，设置a标签样式*/			body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,legend,button,input,textarea,th,td
+      	{
+            margin:0;
+            padding:0;
+        }
+        a{
+            font-size:15px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+		/*头部开始，头部高度40px*/
+        .header{
+            height:40px;
+        }
+		
+		/*playfun标志模块样式，左浮动*/
+        .header .playFun{
+            width:300px;
+            height:40px;
+            float:left;
+        }
+        .header .playFun span{
+            color:snow;
+            line-height:40px;
+            font-size:20px;
+            font-family: "Arial Black","Microsoft Himalaya";
+
+        }
+		
+		/*联系我们模块样式，右浮动*/
+        .header  .connect{
+            float:right;
+            width:80px;
+            height:40px;
+        }
+        .header  .connect a{
+            line-height: 40px;
+        }
+		/*头部结束*/
+		
+		/*内容开始，背景铺满*/
+        .content{
+            width:100%;
+            position:absolute;
+            z-index:-1;
+            background: url(../img/cats.jpg) no-repeat;
+            background-size:cover;
+            top:0px;
+            bottom:0px;
+		}
+		/*登陆模块样式，分上下两区布局，半透明*/
+        .content .signIn{
+            width:300px;
+            height:300px;
+            position:relative;
+            margin:0 auto;
+            margin-top:15%;
+            background: rgba(150,150,150,0.5)
+	    }
+        .content .signIn .signTop{
+            background: #adc2cc;
+            postion:relative;
+            width:300px;
+            height:50px;
+            text-align: center;
+            opacity:0.6;
+            filter:alpha(opacity:60);
+        }
+        .content .signIn .signBottom{
+            margin-top:10px;
+            width:300px;
+            height:240px;
+        }
+		
+		/*登陆模块表单样式排布，输入框半透明*/
+        .content .signIn .signBottom .sign{
+            width:300px;
+            height:60px;
+            text-align: center;
+        }
+        .content .signIn .signBottom .sign input{
+            height:40px;
+            width:240px;
+            border:none;
+            color: #ffffff;
+            background: rgba(150,150,150,0.7);
+        }
+		
+		/*登陆模块记住密码及注册、登陆按钮样式排布*/
+        .content .signIn .signBottom .sign2{
+            width:300px;
+            height:60px;
+            line-height: 60px;
+            color:#FFffff;
+        }
+		/*记住密码*/
+        .content .signIn .signBottom .sign2 .check{
+            height:40px;
+            width:240px;
+            margin:0 auto;
+        }
+		/*注册按钮*/
+        .content .signIn .signBottom .sign2 a{
+            display:inline-block;
+            float:right;
+        }
+        .content .signIn span{
+            font-size:35px;
+            line-height: 50px;
+            color: #ffffff;
+        }
+		/*提交按钮*/
+        .content .signIn .signBottom .sub{
+            height:40px;
+            width:240px;
+            margin-left:30px;
+        }
+		/*内容结束*/
+		
+		/*底部开始，高度40px*/
+        .footer{
+            position:absolute;
+            width:100%;
+            height:40px;
+            bottom:0px;
+            color:#ffffff;
+            text-align: center;
+        }
+		/*底部结束*/
+
+

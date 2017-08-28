@@ -1,0 +1,137 @@
+@charset "utf-8";
+	/*
+	 *CSS Document
+	 *Author:	song
+	 *Date:	2017-8-27
+	 *功能：注册界面样式
+	 *
+	 */
+	 
+	 	/*清除默认内外边距，设定a标签样式*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,legend,button,input,textarea,th,td
+        {
+            margin:0;
+            padding:0;
+        }
+        a{
+            font-size:15px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+		
+		/*头部开始*/
+        .header{
+            height:40px;
+        }
+        .header .playFun{
+            width:300px;
+            height:40px;
+            float:left;
+        }
+        .header .playFun span{
+            color:snow;
+            line-height:40px;
+            font-size:20px;
+            font-family: "Arial Black","Microsoft Himalaya";
+		}
+		/*头部结束*/
+		
+		/*内容开始*/
+        .header  .connect{
+            float:right;
+            width:80px;
+            height:40px;
+        }
+        .header  .connect a{
+            line-height: 40px;
+        }
+		/*内容背景铺满*/
+        .content{
+            width:100%;
+            position:absolute;
+            z-index:-1;
+            background: url(../img/cats.jpg) no-repeat;
+            background-size:cover;
+            top:0px;
+            bottom:0px;
+        }
+		
+		/*注册表背景，半透明，居中*/
+        .content .signIn{
+            width:400px;
+            height:400px;
+            position:relative;
+            margin:0 auto;
+            margin-top:8%;
+            background: rgba(150,150,150,0.5)
+		 }
+		 /*顶部样式*/
+        .content .signIn .signTop{
+            background: #adc2cc;
+            postion:relative;
+            width:400px;
+            height:50px;
+            text-align: center;
+            opacity:0.6;
+            filter:alpha(opacity:60);
+        }
+		.content .signIn span{
+            font-size:35px;
+            line-height: 50px;
+            color: #ffffff;
+        }
+		
+		/*底部大小设置*/
+        .content .signIn .signBottom{
+            margin-top:10px;
+            width:400px;
+            height:240px;
+        }
+		/*注册表单背景色，输入框样式*/
+        .content .signIn .signBottom .sign{
+            width:330px;
+            height:60px;
+            margin-left:40px;
+        }
+        .content .signIn .signBottom .sign input{
+            height:40px;
+            width:240px;
+            border:none;
+            color: #ffffff;
+            background: rgba(150,150,150,0.7);
+            display:inline-block;
+        }
+		
+		/*检查输入内容部分的样式*/
+        .content .signIn .signBottom .sign .sure{
+            width:80px;
+            height:40px;
+            line-height: 40px;
+            float:right;
+            color:lightyellow;
+        }
+        .content .signIn .signBottom .sign p{
+            font-size:12px;
+            color:lightyellow;
+        }
+		/*注册按钮*/
+        .content .signIn .signBottom .sign2{
+            width:400px;
+            height:60px;
+            line-height: 60px;
+            color:#FFffff;
+            text-align: center;
+        }
+		 .content .signIn .signBottom .sub{
+            height:40px;
+            width:240px;
+        }
+		/*内容结束*/
+        .footer{
+            position:absolute;
+            width:100%;
+            height:40px;
+            bottom:0px;
+            color:#ffffff;
+            text-align: center;
+        }

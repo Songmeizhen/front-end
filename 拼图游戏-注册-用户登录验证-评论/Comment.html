@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>PlayFun来评论吧</title>
+    <link href="css/Comment.css" type="text/css" rel=stylesheet>
+	<script src="js/angular.js"></script>
+    <script src="js/weibo.js"></script>
+
+</head>
+<body >
+<div class="back">
+<div ng-controller="weibo" ng-app="PlayComment">
+<!--头部开始-->
+<div class="header">
+<!--左侧标签-->
+    <div class="playFun"> <span>PlayFun 来评论吧</span>
+    </div>
+<!--右侧链接区-->
+    <div class="move">
+        <a href="game1.html">拼图小游戏</a>
+        <span class="user" ng-click="fnUs()">{{usMsg}}</span>
+        <span class="exit" ng-click="fnEx()">退出登陆</span>
+    </div>
+</div>
+<!--头部结束-->
+<!--内容开始-->
+<div class="content">
+<!--提交评论区-->
+    <div class="commentIn">
+        <textarea name="textarea" class="textIn" ng-model="inputText"></textarea>
+<!-- 按钮-->
+        <input type="button" class="sub" ng-click="submitM()"/>
+    </div>
+<!--提交评论区结束-->
+    <div class="comments">
+<!--页码-->
+        <div class="pages">
+            <a href="javascript:;" ng-repeat="page in pages"  class="{{page.className}}" ng-click="switchPage(page.num)">{{page.num}}</a>
+        </div>
+<!--页码结束-->
+<!--评论信息页-->
+        <div class="commentList">
+            <div class="noComment" ng-show="replies.length==0">暂无留言</div>
+            <div class="reply" ng-repeat="reply in replies">
+                <p class="replyContent">{{reply.content}}</p>
+                <p class="operator">
+<!--日期及操作按钮-->
+                    <span class="replyTime" >
+                    {{reply.time*1000|date:"yyyy年MM月dd日  HH:mm:ss"}}</span>
+                   <span class="handle">
+                        <a href="javascript:;" class="top" ng-click="fnAc(reply.id)">{{reply.acc}}</a>
+                        <a href="javascript:;" class="down" ng-click="fnRe(reply.id)">{{reply.ref}}</a>
+                        <a href="javascript:;" class="del" ng-click="fnDe(reply.id)">删除</a>
+                    </span>
+                </p>
+<!--日期及操作按钮结束-->
+            </div>
+
+        </div>
+ <!--评论信息结束-->
+    </div>
+
+</div>
+
+</div>
+<!--内容结束-->
+<div class="footer">
+    <span>Songmeizhen版权所有 &copy 1993-2018</span>
+</div>
+</div>
+</body>
+</html>

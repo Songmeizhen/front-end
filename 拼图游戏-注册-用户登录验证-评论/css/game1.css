@@ -1,0 +1,162 @@
+@charset "utf-8";
+  /*
+   *CSS Document
+   *Author:	song
+   *Date:	2017-8-27
+   *功能：评论界面样式
+   *
+   */
+   
+  		 /*清除并设置默认样式*/ body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,legend,button,input,textarea,th,td
+        {
+            margin:0;
+            padding:0;
+        }
+        a{
+            font-size:15px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+		
+		/*头部开始，头部标签及链接*/
+        .header{
+            height:40px;
+        }
+        .header .playFun{
+            width:300px;
+            height:40px;
+            float:left;
+        }
+        .header .playFun span{
+            color:snow;
+            line-height:40px;
+            font-size:20px;
+            font-family: "Arial Black","Microsoft Himalaya";
+
+        }
+        .header  .connect{
+            float:right;
+            width:300px;
+            height:40px;
+        }
+        .header  .connect a{
+            line-height: 40px;
+            dispaly:inline-block;
+            float:right;
+        }
+		/*头部结束*/
+
+		/*内容开始*/
+        .content{
+            width:100%;
+            position:absolute;
+            z-index:-1;
+            background: url(../img/cats.jpg) no-repeat;
+            background-size:cover;
+            top:0px;
+            bottom:0px;
+        }
+		
+		/*拼图背景图片*/
+        .content .back{
+            box-sizing: border-box;
+            width:480px;
+            height:390px;
+            position:absolute;
+            left:30%;
+                top:20%;
+             opacity:0.7;
+             filter:alpha(opacity:70);
+            background: url(../img/camera.jpg) no-repeat ;
+            border:solid 1px #ffffff;
+        }
+		/*拼图父元素*/
+        .content .pic{
+            width:480px;
+            height:390px;
+            position:absolute;
+            left:30%;
+            top:20%;
+        }
+		
+		/*拼图方块大小设置*/
+        .content .pic div{
+            width:160px;
+            height:130px;
+            position:absolute;
+            border:solid 1px #ffffff;
+            box-sizing: border-box;
+        }
+		/*8块拼图方块对应的背景图片坐标*/
+        .content .pic .p1{
+            left:0;
+            top:0;
+            background: url(../img/camera.jpg) no-repeat 0 0;
+                 }
+        .content .pic .p2{
+            left:160px;
+            top:0;
+            background: url(../img/camera.jpg) no-repeat -160px 0;
+        }
+        .content .pic .p3{
+            left:320px;
+            top:0;
+            background: url(../img/camera.jpg) no-repeat
+            -320px 0;
+        }
+        .content .pic .p4{
+            left:0px;
+            top:130px;
+            background: url(../img/camera.jpg) no-repeat 0px -130px;
+        }
+        .content .pic .p5{
+            left:160px;
+            top:130px;
+            background: url(../img/camera.jpg) no-repeat -160px -130px;
+        }
+        .content .pic .p6{
+            left:320px;
+            top:130px;
+            background: url(../img/camera.jpg) no-repeat -320px -130px;
+        }
+        .content .pic .p7{
+            left:0px;
+            top:260px;
+            background: url(../img/camera.jpg) no-repeat 0px -260px;
+        }
+        .content .pic .p8{
+            left:160px;
+            top:260px;
+            background: url(../img/camera.jpg) no-repeat -160px -260px;
+        }
+		/*可移动的拼图方块的样式*/
+        .content .pic .p9{
+            left:320px;
+            top:260px;
+            background:blue;
+        }
+		
+		/*开始按钮样式*/
+        .content #start
+        {
+            position:absolute;
+            background: #6ab6e9;
+            z-index:-1;
+            border:none;
+            width:100px;
+            height:40px;
+            left:10%;
+            top:40%;
+            opacity:0.7;
+            filter:alpha(opacity:70);
+        }
+		/*内容结束*/
+		
+        .footer{
+            position:absolute;
+            width:100%;
+            height:40px;
+            bottom:0px;
+            color:#ffffff;
+            text-align: center;
+        }
